@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Fluxion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video de fundo -->
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="vds/universo.mp4" type="video/mp4">
+       
+    </video>
+
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <h1>Você é um astronauta em uma missão para explorar novos mundos. Onde você deseja começar sua jornada?</h1>
+            <button class="btn-proximo" data-proximo="1">Sistema Solar</button>
+            
+        </div>
+
+        <div class="passo" id="passo-1">
+            <h2>Você decide explorar o Sistema Solar. Qual planeta você deseja visitar?</h2>
+            <button class="btn-proximo" data-proximo="marte">Marte</button>
+            <button class="btn-proximo" data-proximo="jupiter">Júpiter</button>
+            <button class="btn-proximo" data-proximo="saturno">Saturno</button>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
